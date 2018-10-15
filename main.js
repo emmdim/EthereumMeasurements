@@ -58,7 +58,7 @@ function sendTransactions(nonce, repetitions, etherVal) {
             }
             try {
               const csv = json2csv(times, ['id','start', 'deploymentTime', 'mindTime', 'completionTime']);
-              fs.writeFileSync('mennan_'+String(REPETITIONS)+'.csv', csv, 'utf8');
+              fs.writeFileSync('results_'+String(REPETITIONS)+'.csv', csv, 'utf8');
               console.log("CSV file has been saved.");
               process.exit(0)
             } catch (err) {
