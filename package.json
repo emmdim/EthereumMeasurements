@@ -1,0 +1,26 @@
+{
+  "name": "ethereummeasurements",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emmdim/EthereumMeasurements.git"
+  },
+  "keywords": [
+    "ethereum"
+  ],
+  "author": "emmdim",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/emmdim/EthereumMeasurements/issues"
+  },
+  "homepage": "https://github.com/emmdim/EthereumMeasurements#readme",
+  "dependencies": {
+    "json2csv": "^4.2.1",
+    "web3": "^1.0.0-beta.30"
+  }
+}
