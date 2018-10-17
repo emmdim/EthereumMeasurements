@@ -12,7 +12,7 @@ EXP_NAME = 'test'
 MAX_ROUNDS = 699
 MAX_YVAL = 14
 # DEFINE OUTPUT DIR
-RESULTS_DIR = os.path.join( os.getcwd(),'results')
+RESULTS_DIR = os.path.join( os.getcwd())
 GRAPHS_DIR = os.path.join( os.getcwd(), 'graphs')
 
 ##SET SEABORN STYLE
@@ -72,7 +72,7 @@ def read_results():
 			print e
 			ipdb.set_trace()
 	final = pd.concat(nodes_results.values(),ignore_index=True)
-	ipdb.set_trace()
+	#ipdb.set_trace()
 	return final
 
 def plot_averages(df):
@@ -80,7 +80,7 @@ def plot_averages(df):
 	result = result[['mindTime','completionTime']]/1000
 	result1 = df.groupby(by='parallelTrans').aggregate(np.std)
 	result1 = result1[['mindTime','completionTime']]/1000
-	ipdb.set_trace()
+	#ipdb.set_trace()
 
 	#fig = plt.figure()
 	#result = result[['mindTime','completionTime']].set_index('')
