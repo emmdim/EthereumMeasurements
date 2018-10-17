@@ -4,7 +4,7 @@ const json2csv = require('json2csv').parse;
 
 const acc2 = '0xC202251cabC1393f8Face351057666c43f9a432A' //client
 
-const REPETITIONS = process.argv[2];
+const PARALLELTRANS = process.argv[2];
 const SECONDS = process.argv[3];
 const ETHER = process.argv[4];
 
@@ -26,14 +26,14 @@ let c = getAccount().then( async function() {
   let nonce = await web3.eth.getTransactionCount(account);
   //console.log(nonce);
   /*
-  for (rep in REPETITIONS) {
+  for (rep in PARALLELTRANS) {
     for (sec in SECONDS) {
       waitForSecond(SECONDS[sec]);
-      sendTransactions(nonce, REPETITIONS[rep], ETHER, SECONDS[sec]);
+      sendTransactions(nonce, PARALLELTRANS[rep], ETHER, SECONDS[sec]);
     }
   }*/
-  console.log(REPETITIONS,SECONDS,ETHER);
-  sendTransactions(nonce, REPETITIONS, ETHER, SECONDS);
+  console.log(PARALLELTRANS,SECONDS,ETHER);
+  sendTransactions(nonce, PARALLELTRANS, ETHER, SECONDS);
 });
 
 

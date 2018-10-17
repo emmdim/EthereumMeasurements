@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "run": "node main.js",
+    "run": "node run.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -14,7 +14,9 @@
   "keywords": [
     "ethereum"
   ],
-  "author": "emmdim",
+  "author": {
+    "name": "emmdim"
+  },
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/emmdim/EthereumMeasurements/issues"
